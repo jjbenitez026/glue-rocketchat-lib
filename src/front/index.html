@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #chat {
+            width: 320px;
+            height: 200px;
+            overflow-y: auto;
+            border-top: solid #4d4d4d 5px;
+            border-right: solid #4d4d4d 5px;
+            border-left: solid #4d4d4d 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #chat div.opaque {
+            color: #828282;
+        }
+
+        #box {
+            width: 320px;
+            border-bottom: solid #4d4d4d 5px;
+            border-left: solid #4d4d4d 5px;
+            border-right: solid #4d4d4d 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #area {
+            display: none;
+        }
+
+        #login {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="centered">
+
+    <button id="login">Login</button>
+
+    <div id="area">
+        <div id="chat"></div>
+        <form id="formBox">
+            <input id="box"/>
+        </form>
+    </div>
+
+</div>
+
+<script>var exports = {};</script>
+
+<script type="module" src="../../../dist/bundle.js"></script>
+</body>
+</html>
